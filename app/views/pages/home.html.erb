@@ -19,31 +19,73 @@
     </div>
 </nav>
 
-<!-- Full-Width Carousel -->
-<div id="carousel1" class="carousel slide" data-bs-ride="carousel">
-    <!-- Carousel Content -->
-    <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1678467064/guehss74ur3daktsukfj.jpg" class="d-block w-100" alt="Wedding Photo 1">
-        </div>
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-            <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1678467064/guehss74ur3daktsukfj.jpg" class="d-block w-100" alt="Wedding Photo 2">
-        </div>
-        <!-- Add more slides as needed -->
-    </div>
-</div>
+<section class="slider-wrapper">
+  <button class="slide-arrow" id="slide-arrow-prev">
+    <i class="icon ion-ios-arrow-back"></i>
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    <i class="icon ion-ios-arrow-forward"></i>
+  </button>
+  <ul class="slides-container" id="slides-container">
+    <li class="slide">
+      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1678466021/cld-sample-5.jpg" class="d-block w-100" alt="shoe">
+    </li>
+    <li class="slide">
+      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1678467064/guehss74ur3daktsukfj.jpg" class="d-block w-100" alt="Wedding Photo 1">
+    </li>
+    <li class="slide">
+      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1678465999/samples/animals/reindeer.jpg" class="d-block w-100" alt="Wedding Photo 1">
+    </li>
+    <li class="slide"></li>
+  </ul>
+</section>
+
+<script>
+  const slidesContainer = document.getElementById("slides-container");
+  const slide = document.querySelector(".slide");
+  const prevButton = document.getElementById("slide-arrow-prev");
+  const nextButton = document.getElementById("slide-arrow-next");
+
+  nextButton.addEventListener("click", (event) => {
+    const slideWidth = slide.clientWidth;
+      slidesContainer.scrollLeft += slideWidth;
+  });
+
+  prevButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft -= slideWidth;
+  });
+
+  nextButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft += slideWidth;
+  });
+
+  prevButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft -= slideWidth;
+  });
+</script>
+
 
 <!-- Introduction Section -->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-6">
-            <h2>Welcome to Our Photography Studio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<section id="about" class="text-left content-section"></section>
+  <div class="overlay">
+    <div class="container-main d-flex" style="background-color: rgb(92,92,76);">
+      <div class="container d-flex">
+        <div class="about_image col-lg-6">
+          <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1694192497/ni%C3%B1a_babosa_qnrsw5.jpg" class="about_photo" alt="Wedding Photo 1">
         </div>
+      </div>
+      <div class="row" style="padding: 5rem;">
+        <div class="col-lg-8" style="padding-right: 1rem; padding-top: 4em;">
+          <h3><span style="color: rgb(224,209,194); font-size: 0.9em;; font-weight: bold;">ABOUT</span></h3>
+          <p><br /><span style="color: rgb(224,209,194); font-size: 10px; ">WELCOME TO ADELE PHOTOGRAPHY – WHERE MOMENTS ARE CAPTURED, AND MEMORIES ARE MADE TIMELESS. WE ARE A PASSIONATE TEAM OF DEDICATED PHOTOGRAPHERS WHO SPECIALIZE IN TURNING YOUR SPECIAL DAY INTO A VISUAL MASTERPIECE. WE BELIEVE THAT EVERY LOVE STORY IS UNIQUE AND DESERVES TO BE TOLD BEAUTIFULLY THROUGH THE ART OF PHOTOGRAPHY. OUR APPROACH IS A BLEND OF CREATIVITY, CANDID MOMENTS, AND ATTENTION TO DETAIL. WE STRIVE TO CAPTURE THE ESSENCE OF YOUR LOVE, THE EMOTIONS, AND THE LITTLE THINGS THAT MAKE YOUR WEDDING DAY TRULY EXTRAORDINARY.</span></p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
 <!-- Smaller Carousel -->
 <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
