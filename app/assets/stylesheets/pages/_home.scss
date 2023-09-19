@@ -23,3 +23,37 @@ h3 {
   color: $dark-brown;
   padding-bottom: 1em;
 }
+
+.fixed-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000; /* Adjust this value as needed */
+  /* Other styles */
+}
+
+.phone {
+  height: 3em;
+  width: 3em;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.9em;
+  color: $dark-brown;
+  background-color: rgba(222, 208, 193, 0.3);
+  border: none;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-phone {
+  margin-left: 1px;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.a {
+  text-decoration: none !important;
+}
