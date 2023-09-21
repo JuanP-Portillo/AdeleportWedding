@@ -19,6 +19,7 @@ h3 {
   font-family: Helvetica, sans-serif, sans-serif; /* Replace 'Your Custom Font' with the actual font name */
 }
 
+
 .section-title {
   color: $dark-brown;
   padding-bottom: 1em;
@@ -26,20 +27,22 @@ h3 {
 
 .fixed-bottom-right {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5%;
+  right: 4%;
   z-index: 1000; /* Adjust this value as needed */
   /* Other styles */
 }
 
 .phone {
-  height: 3em;
-  width: 3em;
+  height: 4em;
+  width: 4em;
   padding: 0.5em;
   padding-left: 0.8em;
   padding-right: 0.9em;
-  color: $dark-brown;
-  background-color: rgba(222, 208, 193, 0.3);
+  color: rgba(230, 199, 199, 1);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 7px rgba(145, 118, 118, 0.1);
+
   border: none;
   text-decoration: none !important;
   display: flex;
@@ -49,11 +52,12 @@ h3 {
 }
 
 .fa-phone {
+  font-size: 1.7em;
   margin-left: 1px;
   text-decoration: none !important;
   color: inherit;
 }
 
-.a {
+a {
   text-decoration: none !important;
 }
