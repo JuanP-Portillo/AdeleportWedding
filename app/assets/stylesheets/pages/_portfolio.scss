@@ -1,50 +1,29 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-header h1 {
-  font-size: 36px;
-}
-
 main {
-  padding: 20px;
+  padding: 10%;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .photo {
-  border: 1px solid #ddd;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  flex: 0 0 calc(50% - 2%); /* 50% width with 1% margin on each side */
+  margin: 1%; /* 1% margin between images */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.left {
+  order: 1; /* Display on the left */
+}
+
+.right {
+  order: 2; /* Display on the right */
 }
 
 .photo img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Set a fixed width for the images */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
   display: block;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+  object-fit: cover; /* Ensure the image covers the entire container */
 }
