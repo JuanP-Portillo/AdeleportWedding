@@ -3,52 +3,7 @@
 
 
 <section class="slider-wrapper">
-  <button class="slide-arrow" id="slide-arrow-prev">
-    <i class="icon ion-ios-arrow-back"></i>
-  </button>
-  <button class="slide-arrow" id="slide-arrow-next">
-    <i class="icon ion-ios-arrow-forward"></i>
-  </button>
-  <ul class="slides-container" id="slides-container">
-    <li class="slide">
-      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1694194488/AdeleWedding/fotos/awp4_c4st6d.jpg" class="d-block w-100" alt="Wedding Photo 1">
-    </li>
-    <li class="slide">
-      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1695313397/wide-angle-wedding-570x321_apo7it.jpg" class="d-block w-100" alt="Wedding Photo 2">
-    </li>
-    <li class="slide">
-      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1695313397/wide4_hew74d.jpg" class="d-block w-100" alt="Wedding Photo 3">
-    </li>
-    <li class="slide">
-      <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1695313397/wide3_qisybr.jpg" class="d-block w-100" alt="Wedding Photo 4">
-    </li>
-  </ul>
-  <script>
-    const slidesContainer = document.getElementById("slides-container");
-    const slide = document.querySelector(".slide");
-    const prevButton = document.getElementById("slide-arrow-prev");
-    const nextButton = document.getElementById("slide-arrow-next");
-
-    nextButton.addEventListener("click", (event) => {
-      const slideWidth = slide.clientWidth;
-        slidesContainer.scrollLeft += slideWidth;
-    });
-
-    prevButton.addEventListener("click", () => {
-      const slideWidth = slide.clientWidth;
-      slidesContainer.scrollLeft -= slideWidth;
-    });
-
-    nextButton.addEventListener("click", () => {
-      const slideWidth = slide.clientWidth;
-      slidesContainer.scrollLeft += slideWidth;
-    });
-
-    prevButton.addEventListener("click", () => {
-      const slideWidth = slide.clientWidth;
-      slidesContainer.scrollLeft -= slideWidth;
-    });
-  </script>
+  <%= render "sections/carousel_top" %>
 </section>
 
 
