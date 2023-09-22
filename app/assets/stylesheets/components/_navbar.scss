@@ -1,13 +1,31 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
-  background: white;
-  position: relative;
+  /*border-bottom: $white 0.5px solid;*/
+  position: absolute;
+  top: 0%;
+  z-index: 1000;
+  width: 100vw;
+  padding-top: 2%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0,0,0,0)); /* Replace these colors with your desired gradient */
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Helvetica Neue";
+  /*  font-size: 2.2em;*/
+  font-size: 2.2em;
+
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Helvetica Neue";
+  font-size: 2.2em;
+  padding-left: 3em !important;
+  /*font-weight: 100;*/
+
 }
