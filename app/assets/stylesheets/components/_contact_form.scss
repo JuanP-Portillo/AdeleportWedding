@@ -7,10 +7,12 @@ html {
 }
 
 #contact_page {
-  background: $green;
+  background: $pink;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+
 }
+
 
 button {
   overflow: visible;
@@ -35,10 +37,12 @@ textarea {
 }
 
 #container {
-  border: solid 3px $light-brown;
-  max-width: 768px;
+  /*border: solid 3px rgb(232,220,212);*/
+  background: $light-brown;
+  max-width: 720px;
   margin: 20px auto;
   position: relative;
+  padding-top: 1.5em;
 }
 
 form {
@@ -46,7 +50,7 @@ form {
 }
 
 h1 {
-  color: $light-brown;
+  color: rgb(232,220,212);
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -55,7 +59,7 @@ h1 {
 }
 
 #underline {
-  border-bottom: solid 2px $light-brown;
+  border-bottom: solid 2px rgb(232,220,212);
   margin-top: 1.49em;
   margin-bottom: 2.49em;
   width: 80px;
@@ -68,7 +72,7 @@ h1 {
 
 .icon {
   display: block;
-  fill: $light-brown;
+  fill: rgb(232,220,212);
   height: 50px;
   margin: 0 auto;
   width: 50px;
@@ -82,8 +86,8 @@ h1 {
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px $light-brown;
-	color: $light-brown;
+	border-bottom: solid 2px rgb(232,220,212);
+	color: rgb(232,220,212);
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -140,27 +144,27 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: $light-brown;
+	color: rgb(232,220,212);
 }
 
 :-moz-placeholder {
-	color: $light-brown;
+	color: rgb(232,220,212);
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: $light-brown;
+	color: rgb(232,220,212);
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: $light-brown;
+	color: rgb(232,220,212);
 }
 
 #form_button {
   background: none;
-  border: solid 2px $light-brown;
-  color: $light-brown;
+  border: solid 2px rgb(232,220,212);
+  color: rgb(232,220,212);
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -177,7 +181,7 @@ textarea {
 }
 
 #form_button:hover {
-  background: $light-brown;
+  background: rgb(232,220,212);
   color: $green;
 }
 
