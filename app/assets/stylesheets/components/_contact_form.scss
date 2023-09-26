@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "nunito", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 #contact_page {
-  background: $pink;
+  background: rgb(228,204,196);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 
@@ -37,8 +37,8 @@ textarea {
 }
 
 #container {
-  /*border: solid 3px rgb(232,220,212);*/
-  background: $light-brown;
+  /*border: solid 3px $light-brown;*/
+  background: rgb(232,220,212);
   max-width: 720px;
   margin: 20px auto;
   position: relative;
@@ -50,7 +50,7 @@ form {
 }
 
 h1 {
-  color: rgb(232,220,212);
+  color: $light-brown;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -59,7 +59,7 @@ h1 {
 }
 
 #underline {
-  border-bottom: solid 2px rgb(232,220,212);
+  border-bottom: solid 2px $light-brown;
   margin-top: 1.49em;
   margin-bottom: 2.49em;
   width: 80px;
@@ -72,7 +72,7 @@ h1 {
 
 .icon {
   display: block;
-  fill: rgb(232,220,212);
+  fill: $light-brown;
   height: 50px;
   margin: 0 auto;
   width: 50px;
@@ -86,8 +86,8 @@ h1 {
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px rgb(232,220,212);
-	color: rgb(232,220,212);
+	border-bottom: solid 2px $light-brown;
+	color: $light-brown;
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -144,30 +144,30 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: rgb(232,220,212);
+	color: $light-brown;
 }
 
 :-moz-placeholder {
-	color: rgb(232,220,212);
+	color: $light-brown;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: rgb(232,220,212);
+	color: $light-brown;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: rgb(232,220,212);
+	color: $light-brown;
 }
 
 #form_button {
   background: none;
-  border: solid 2px rgb(232,220,212);
-  color: rgb(232,220,212);
+  border: solid 2px $light-brown;
+  color: $light-brown;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
@@ -181,8 +181,8 @@ textarea {
 }
 
 #form_button:hover {
-  background: rgb(232,220,212);
-  color: $green;
+  background: $light-brown;
+  color: $beige;
 }
 
 @media screen and (max-width: 768px) {

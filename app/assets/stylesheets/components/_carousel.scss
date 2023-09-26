@@ -14,7 +14,8 @@
   padding: 0;
   overflow: hidden;
   scroll-behavior: smooth;
-  opacity: 0.5;
+
+
 }
 .slide {
   width: 100%;
@@ -22,6 +23,10 @@
   flex: 1 0 100%;
   top: 50%;
   right: 50%;
+  /*opacity: 0.8;*/
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
 }
 
 .slide-arrow {
