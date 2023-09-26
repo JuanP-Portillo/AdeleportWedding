@@ -1,5 +1,26 @@
-<h1>Portfolio</h1>
-<p>Welcome to my portfolio page.</p>
-
-<a href="<%= wedding_gallery_path %>" class="btn btn-primary">Wedding Photo Gallery</a>
-<a href="<%= sessions_gallery_path %>" class="btn btn-primary">Normal Photo Sessions Gallery</a>
+<div class="portfolio-options-container">
+  <div class="content">
+    <div class="wrapper">
+      <%= link_to wedding_gallery_path do %>
+        <div class="box blury-card">
+          <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1694194485/AdeleWedding/fotos/awp1_imahdc.jpg" alt="Blue Ridge Mountains">
+          <div class="frame">
+            <h2>Weddings</h2>
+            <p>See selection</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="wrapper">
+      <%= link_to sessions_gallery_path do %>
+        <div class="box blury-card">
+          <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1694194485/AdeleWedding/fotos/awp3_c7kg96.jpg" alt="Blue Ridge Mountains">
+          <div class="frame">
+            <h2>Sessions</h2>
+            <p>See selection</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
