@@ -2,6 +2,8 @@
 	display: flex;
 	padding: 2px;
 	transition: .3s;
+  background-color: $beige;
+  padding-top: 15vh;
 
 	&:hover &__image {
 		filter: grayscale(1);
@@ -14,8 +16,9 @@
 	}
 
 	&__link {
-		margin: 2px;
+		margin: 4px;
 		overflow: hidden;
+    border-radius: 5px;
 
 		&:hover {
 			.gallery__image {
@@ -36,6 +39,7 @@
 		display: block;
 		width: 100%;
 		transition: .3s;
+    border-radius: 5px;
 
 		&:hover {
 			transform: scale(1.1);
@@ -54,6 +58,7 @@
 		opacity: 0;
 		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
 		transition: .3s;
+
 	}
 }
 
