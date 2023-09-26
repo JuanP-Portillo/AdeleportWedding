@@ -6,7 +6,7 @@
   z-index: 1000;
   width: 100vw;
   padding-top: 2%;
-  background-image: linear-gradient(to bottom, rgba(60,58,56,255), rgba(144, 144, 144, 0)); /* Replace these colors with your desired gradient */
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(144, 144, 144, 0)); /* Replace these colors with your desired gradient */
 }
 
 .navbar .navbar-collapse {
@@ -15,7 +15,7 @@
 
 .navbar .navbar-brand {
   color: rgba(238,234,232,255);
-  font-family: "Helvetica Neue";
+  font-family: "Nanum Myeongjo";
   /*  font-size: 2.2em;*/
   font-size: 2.2em;
 
@@ -23,7 +23,7 @@
 
 .navbar .nav-link {
   color: rgba(238,234,232,255);
-  font-family: "Helvetica Neue";
+  font-family: "Nanum Myeongjo";
   font-size: 2.2em;
   padding-left: 3em !important;
   /*font-weight: 100;*/
