@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "nunito", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 #contact_page {
-  background: $pink;
+  background: rgb(228,204,196);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 
@@ -167,7 +167,7 @@ textarea {
   color: $light-brown;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: "nunito", sans-serif;
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
@@ -182,7 +182,7 @@ textarea {
 
 #form_button:hover {
   background: $light-brown;
-  color: $green;
+  color: $beige;
 }
 
 @media screen and (max-width: 768px) {
