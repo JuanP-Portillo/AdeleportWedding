@@ -14,7 +14,8 @@
   padding: 0;
   overflow: hidden;
   scroll-behavior: smooth;
-  opacity: 0.5;
+  background-color: $beige;
+
 }
 .slide {
   width: 100%;
@@ -22,6 +23,8 @@
   flex: 1 0 100%;
   top: 50%;
   right: 50%;
+  opacity: 0.8;
+
 }
 
 .slide-arrow {
