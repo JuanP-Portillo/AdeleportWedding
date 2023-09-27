@@ -1,5 +1,18 @@
 // Specific CSS for your home-page
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: Add a slight vertical translation */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Define the visible state for the fade-in effect */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset vertical translation */
+}
+
+
 .about_image {
   width: 20em;
   height: 30em;
@@ -14,9 +27,6 @@
 
   border-radius: 155px 155px;
 }
-
-
-
 
 .section-title {
   color: $dark-brown;

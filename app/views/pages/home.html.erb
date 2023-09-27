@@ -1,41 +1,61 @@
-
-<!-- Transparent Header -->
-
-
 <section class="slider-wrapper">
-  <%= render "sections/carousel_top" %>
-</section>
+    <%= render "sections/carousel_top" %>
+  </section>
 
-<div class="banner">
-  <div class="banner-text text-center" >"Love is a many splendid thing" </div>
-</div>
-
-<!-- Introduction Section -->
-<section id="about" class="text-left content-section"></section>
-  <%= render "sections/about"%>
-</section>
-
-<div class="banner-image">
-  <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1695313397/wide3_qisybr.jpg">
-</div>
-
-<section id="testimonials" class="content-section">
-  <%= render "sections/testimonials"%>
-</section>
-
-<div class="banner">
-  <div class="banner-text text-center" >"Lets make weddings photogenic together"</div>
-</div>
-
-<!-- Contact Form -->
-<section id="contact_page" class="content-section">
-  <div>
-    <%= render "sections/contact" %>
+  <div class="banner fade-in">
+    <div class="banner-text text-center">
+      "Love is a many splendid thing"
+    </div>
   </div>
-</section>
 
-<!-- Footer with Social Media Links -->
+  <section id="about" class="text-left content-section fade-in">
+    <%= render "sections/about"%>
+  </section>
 
+  <div class="banner-image fade-in">
+    <img src="https://res.cloudinary.com/dubrm4blh/image/upload/v1695313397/wide3_qisybr.jpg" alt="Banner Image">
+  </div>
 
-<!-- Include Bootstrap JS -->
+  <section id="testimonials" class="content-section fade-in">
+    <%= render "sections/testimonials"%>
+  </section>
+
+  <div class="banner fade-in">
+    <div class="banner-text text-center">
+      "Lets make weddings photogenic together"
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <section id="contact_page" class="content-section fade-in">
+    <div>
+      <%= render "sections/contact" %>
+    </div>
+  </section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.fade-in');
+
+  const fadeInOptions = {
+    root: null,
+    threshold: 0.2, // Adjust this value as needed
+  };
+
+  const fadeInObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, fadeInOptions);
+
+  sections.forEach((section) => {
+    fadeInObserver.observe(section);
+  });
+});
+</script>
