@@ -1,11 +1,15 @@
-<footer class="text-light p-4" style="background-color: rgb(220,212,196); font-family:'Nanum Myeongjo';" >
+<footer id="footer" class="footer text-light p-4" style="background-color: rgb(220,212,196); font-family:'Nanum Myeongjo';" >
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         &copy;AdelePort 2023 Wedding Photographer
       </div>
       <div class="col-md-6 text-end">
-        <!-- Add your social media links here (e.g., icons with links) -->
+        <ul style="font-size: 3em;">
+          <%= link_to "https://www.instagram.com/adeleport_wp/" do %>
+            <i class="fab fa-instagram" style="color: white;"></i>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
