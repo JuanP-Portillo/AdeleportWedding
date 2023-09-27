@@ -5,6 +5,7 @@
   background-color: $beige;
   padding-top: 15vh;
 
+
 	&:hover &__image {
 		filter: grayscale(1);
 	}
@@ -69,8 +70,8 @@
   color: white;
 }
 
-.box {
-  background-color: $dark-brown;
-  width: 100vw !important;
-  margin: 0% !important;
-}
+//.box {
+//  background-color: $dark-brown;
+//  width: 100vw !important;
+//  margin: 0% !important;
+//}//
