@@ -3,7 +3,7 @@
 	padding: 2px;
 	transition: .3s;
   background-color: $beige;
-  padding-top: 15vh;
+  padding-top: 1vh;
 
 
 	&:hover &__image {
@@ -70,6 +70,17 @@
   color: white;
 }
 
+.image-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 50%; /* Adjust as needed to vertically center the text */
+  left: 50%; /* Adjust as needed to horizontally center the text */
+  transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+  font-family: 'Nanum Myeongjo', serif;
+  font-style: italic;
+  font-size: 4.5em;
+  color: $dark-brown;
+  z-index: 1; /* Ensure the text appears above the image */
+}
 //.box {
   //background-color: $dark-brown;
   //width: 100vw !important;
