@@ -1,16 +1,20 @@
-<footer id="footer" class="footer text-light p-4" style="background-color: rgb(220,212,196); font-family:'Nanum Myeongjo';" >
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        &copy;AdelePort 2023 Wedding Photographer
-      </div>
-      <div class="col-md-6 text-center">
-        <ul style="font-size: 1.5em;">
-          <%= link_to "https://www.instagram.com/adeleport_wp/" do %>
-            <i class="fab fa-instagram" style="color: white;"></i>
-          <% end %>
-        </ul>
-      </div>
+<div id="footer" class="text-light">
+  <div class="row">
+    <div class="col-md-6">
+      &copy;AdelePort 2023 Wedding Photographer
+    </div>
+    <div class="col-md-6">
+      <ul class="a-holder d-flex justify-content-space-between" style="font-size: 1.5em;">
+        <%= link_to "https://www.instagram.com/adeleport_wp/" do %>
+          <i class="fab fa-instagram" style="color: white;"></i>
+        <% end %>
+        <%= link_to "/" do %>
+          <i class="fa-solid fa-house" style="color: white;"></i>
+        <% end %>
+        <%= link_to "/#contact_page" do %>
+          <i class="fa-solid fa-phone" style="color: white; font-size: 1.1em !important;"></i>
+        <% end %>
+      </ul>
     </div>
   </div>
-</footer>
+</div>

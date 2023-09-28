@@ -16,9 +16,18 @@
 .navbar .navbar-brand {
   color: rgba(238,234,232,255);
   font-family: "Nanum Myeongjo";
+  font-size: 2.2em;
+  font-weight: 700;
+
+}
+
+.navbar .navbar-brand:hover {
+  color: rgba(238,234,232,255);
+  font-family: "Nanum Myeongjo";
   /*  font-size: 2.2em;*/
   font-size: 2.2em;
-
+  font-weight: 700;
+  font-style: italic;
 }
 
 .navbar .nav-link {
@@ -26,6 +35,14 @@
   font-family: "Nanum Myeongjo";
   font-size: 2.2em;
   padding-left: 3em !important;
-  /*font-weight: 100;*/
+  font-weight: 700;
 
+}
+.navbar .nav-link:hover {
+  color: rgba(238,234,232,255);
+  font-family: "Nanum Myeongjo";
+  font-size: 2.2em;
+  padding-left: 3em !important;
+  font-weight: 700;
+  font-style: italic;
 }
