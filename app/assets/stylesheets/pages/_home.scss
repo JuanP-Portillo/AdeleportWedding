@@ -62,6 +62,24 @@
   border-radius: 50%;
 }
 
+.phone:hover {
+  height: 4em;
+  width: 4em;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.9em;
+  color: rgb(244,227,228);
+  background-color: rgba(245, 211, 211, 0.5);
+  box-shadow: 0 1px 7px rgba(145, 118, 118, 0.3);
+
+  border: none;
+  text-decoration: none !important;
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;
+  border-radius: 50%;
+}
+
 .fa-phone {
   font-size: 1.7em;
   margin-left: 1px;
