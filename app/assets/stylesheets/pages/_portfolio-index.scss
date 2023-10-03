@@ -143,10 +143,10 @@
   }
 
   &:hover {
-   img {
-    transform: scale(1.1);
-    filter: grayscale(100%);
-   }
+    img {
+      transform: scale(1.1);
+      filter: sepia(42%) hue-rotate(355deg);
+    }
 
     p {
       transform: scale(1);
