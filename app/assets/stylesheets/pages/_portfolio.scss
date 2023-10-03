@@ -1,3 +1,9 @@
+#photos_container {
+  .gallery__image {
+    filter: sepia(42%) hue-rotate(355deg);
+  }
+}
+
 .gallery {
 	display: flex;
 	padding: 2px;
@@ -6,9 +12,9 @@
   padding-top: 1vh;
 
 
-	&:hover &__image {
-		filter: grayscale(1);
-	}
+	&__image {
+    filter: sepia(42%) hue-rotate(355deg);
+  }
 
 	&__column {
 		display: flex;
@@ -23,7 +29,7 @@
 
 		&:hover {
 			.gallery__image {
-				filter: grayscale(0);
+				filter: sepia(0);
 			}
 
 			.gallery__caption {
