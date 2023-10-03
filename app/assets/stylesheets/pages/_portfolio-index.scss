@@ -2,12 +2,17 @@
 * {
   box-sizing: border-box;
 }
-
-
+h5 {
+  color: #bc9c7c;;
+}
+h4 {
+  color: #bc9c7c;;
+  font-weight: 400;
+}
 
 .portfolio-options-container {
   width: 100%;
-  height: 90vh;
+  height: 115vh;
   border-radius: 4px;
   margin: 0 auto;
   padding: 40px 0;
@@ -19,12 +24,12 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 150px;
   padding: 0 30px;
+  margin-top: 10vh
 }
 
 .wrapper {
-  width: 33.3%;
+  width: 40.3%;
   height: 100%;
   padding: 10px;
 }
@@ -46,6 +51,7 @@
 }
 
 .box {
+  margin-bottom: 1vh;
   position: relative;
   max-height: 300px;
   border-radius: 4px;
@@ -69,7 +75,7 @@
     transform: translate(-50%, -50%);
   }
 
-  h2, p {
+  h2, p, h5 {
     position: absolute;
     color: #fff;
     z-index: 2;
