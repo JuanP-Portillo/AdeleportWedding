@@ -70,6 +70,12 @@ h1 {
   width: 100%;
 }
 
+.icon_wrapper img{
+  height: 80px;
+  filter: brightness(0) invert(0.55) sepia(200);
+  padding-left: 47%;
+}
+
 .icon {
   display: block;
   fill: $light-brown;
