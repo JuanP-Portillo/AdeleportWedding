@@ -1,6 +1,7 @@
 #photos_container {
   .gallery__image {
     filter: sepia(42%) hue-rotate(355deg);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   }
 }
 
@@ -13,7 +14,7 @@
 
 
 	&__image {
-    filter: sepia(42%) hue-rotate(355deg);
+    filter: sepia(42%) hue-rotate(-5deg);
   }
 
 	&__column {
