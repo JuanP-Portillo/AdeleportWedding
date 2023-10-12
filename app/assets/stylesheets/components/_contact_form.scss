@@ -190,7 +190,7 @@ textarea {
 
 #form_button:hover {
   background: $light-brown;
-  color: $green;
+  color: $beige;
 }
 
 @media screen and (max-width: 768px) {
@@ -230,5 +230,21 @@ textarea {
 
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
+  }
+}
+
+#contact_form {
+  direction: ltr;
+
+  .names,
+  .email,
+  .telephone,
+  .message {
+    direction: ltr;
+
+    input,
+    textarea {
+      direction: ltr;
+    }
   }
 }

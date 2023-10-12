@@ -7,23 +7,24 @@
   </div>
   <%= form_for @contact_submission, html: { id: 'contact_form' } do |f| %>
     <div class="names">
-      <label for="names"></label>
-      <input type="text" placeholder="My name is" name="name" id="name_input" required>
+      <%= f.label :name %>
+      <%= f.text_field :name, placeholder: "My name is", required: true %>
     </div>
     <div class="email">
-      <label for="email"></label>
-      <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+      <%= f.label :email %>
+      <%= f.email_field :email, placeholder: "My e-mail is", required: true %>
     </div>
     <div class="telephone">
-      <label for="name"></label>
-      <input type="text" placeholder="My number is" name="phone" id="phone_input" required>
+      <%= f.label :phone %>
+      <%= f.text_field :phone, placeholder: "My number is", required: true %>
     </div>
     <div class="message">
-      <label for="message"></label>
-      <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+      <%= f.label :message %>
+      <%= f.text_area :message, placeholder: "I'd like to chat about", required: true %>
     </div>
     <div class="submit">
-      <input type="submit" value="Send Message" id="form_button" />
+      <%= f.submit "Send Message", id: "form_button" %>
     </div>
   <% end %>
+
 </div>
