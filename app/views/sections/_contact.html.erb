@@ -7,19 +7,19 @@
   </div>
   <%= form_for @contact_submission, html: { id: 'contact_form' } do |f| %>
     <div class="names">
-      <%= f.label :name %>
+      <% f.label :name %>
       <%= f.text_field :name, placeholder: "My name is", required: true %>
     </div>
     <div class="email">
-      <%= f.label :email %>
+      <% f.label :email %>
       <%= f.email_field :email, placeholder: "My e-mail is", required: true %>
     </div>
     <div class="telephone">
-      <%= f.label :phone %>
+      <% f.label :phone %>
       <%= f.text_field :phone, placeholder: "My number is", required: true %>
     </div>
     <div class="message">
-      <%= f.label :message %>
+      <% f.label :message %>
       <%= f.text_area :message, placeholder: "I'd like to chat about", required: true %>
     </div>
     <div class="submit">
