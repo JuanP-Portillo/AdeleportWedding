@@ -2,11 +2,12 @@ class ContactSubmissionsController < ApplicationController
   def create
     @contact_submission = ContactSubmission.new(contact_params)
     if @contact_submission.save
-      ContactMailer.send_contact_email(@contact_submission).deliver_now
-      flash[:notice] = "Your message has been sent!"
+      ContactMailer.with(contact_submission: @contact_submission).send_contact_email.deliver_now
       redirect_to root_path
+      flash[:notice] = "Your message has been sent!"
     else
       render :home
+      flash[:notice] = "Failure heiafruehifru!"
     end
   end
 
