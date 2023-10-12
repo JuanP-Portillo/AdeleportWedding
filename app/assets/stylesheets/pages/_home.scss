@@ -118,9 +118,15 @@ a {
 
 .banner-image {
   background-color: $beige;
-  height: 75vh;
+  height: 110vh;
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
   overflow: hidden;
+}
+
+.centered-video {
+  position: relative;
+  display: block;
+  margin: 0 auto;
 }
