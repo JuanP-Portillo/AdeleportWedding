@@ -84,7 +84,7 @@
   transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
   font-family: 'Nanum Myeongjo', serif;
   font-style: italic;
-  font-size: 4.5em;
+  font-size: 5.5em;
   color: $dark-brown;
   z-index: 1; /* Ensure the text appears above the image */
 }
@@ -93,3 +93,6 @@
   //width: 100vw !important;
   //margin: 0% !important;
 //}
+.bw-image {
+  filter: grayscale(100%);
+}
