@@ -232,3 +232,19 @@ textarea {
     font-size: 0.875em;
   }
 }
+
+#contact_form {
+  direction: ltr;
+
+  .names,
+  .email,
+  .telephone,
+  .message {
+    direction: ltr;
+
+    input,
+    textarea {
+      direction: ltr;
+    }
+  }
+}

@@ -103,6 +103,15 @@ a {
   overflow: hidden;
 }
 
+.video_banner {
+  background-color: $beige;
+  height: 85vh;
+  display: flex;
+  justify-content: space-between; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  overflow: hidden;
+}
+
 .banner-text {
   font-family: 'Nanum Myeongjo', serif;
   font-style: italic;
@@ -118,7 +127,7 @@ a {
 
 .banner-image {
   background-color: $beige;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
@@ -129,4 +138,7 @@ a {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
