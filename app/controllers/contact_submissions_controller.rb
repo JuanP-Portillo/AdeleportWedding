@@ -1,8 +1,9 @@
 class ContactSubmissionsController < ApplicationController
   def create
-    @contact_submission = ContactSubmission.new(contact_params)
-    if @contact_submission.save
-      ContactMailer.with(contact_submission: @contact_submission).send_contact_email.deliver_now
+    @contact_submission = ContactSubmission.new(contact_submission_params)
+    p contact_submission_params
+    if @contact_submission.save!
+      ClientMailer.with(contact_submission: @contact_submission).send_client_email.deliver_now
       redirect_to root_path
       flash[:notice] = "Your message has been sent!"
     else
@@ -11,7 +12,7 @@ class ContactSubmissionsController < ApplicationController
     end
   end
 
-  def contact_params
+  def contact_submission_params
     params.require(:contact_submission).permit(:name, :email, :phone, :message)
   end
 end
