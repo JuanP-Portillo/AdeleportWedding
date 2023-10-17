@@ -42,13 +42,13 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: 'localhost:3000', protocol: 'http' }
   config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
+    address: 'smtp-mail.outlook.com',
     port: 587,
-    user_name: 'weddingadele@gmail.com',
-    password: 'ygpbqhovxgvotsmj',
-    authentication: 'plain',
+    domain: 'outlook.com', # If you have one, otherwise you can use 'outlook.com'
+    user_name: 'adeleweddings@outlook.com',
+    password: 'ztysvscespwichan',
+    authentication: 'login',
     enable_starttls_auto: true
   }
 
