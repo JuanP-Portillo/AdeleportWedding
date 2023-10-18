@@ -16,6 +16,16 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  config.action_mailer.delivery_method = :smtp
+  host = "https://adele-wedding-825c5b3cdfb1.herokuapp.com/"
+  config.action_mailer.default_url_options = {host: host}
+  config.action_mailer.smtp_settings = {address:              "smtp.sendgrid.net",
+  port:                 465,
+  user_name:            ENV["SENDGRID_USERNAME"],
+  password:             ENV["SENDGRID_PASSWORD"],
+  authentication:       "plain",
+  enable_starttls_auto: true}
+
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true
