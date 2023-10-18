@@ -22,27 +22,41 @@
 
 <script>
   const slidesContainer = document.getElementById("slides-container");
-  const slide = document.querySelector(".slide");
+  const slides = document.querySelectorAll(".slide");
   const prevButton = document.getElementById("slide-arrow-prev");
   const nextButton = document.getElementById("slide-arrow-next");
-
-  nextButton.addEventListener("click", (event) => {
-    const slideWidth = slide.clientWidth;
-      slidesContainer.scrollLeft += slideWidth;
-  });
-
-  prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
-  });
+  let currentSlide = 0;
 
   nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
+    currentSlide = (currentSlide + 1) % slides.length;
+    animateScrollToSlide(currentSlide);
   });
 
   prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    animateScrollToSlide(currentSlide);
   });
+
+  function animateScrollToSlide(index) {
+    const targetPosition = index * slidesContainer.clientWidth;
+    const startPosition = slidesContainer.scrollLeft;
+    const distance = targetPosition - startPosition;
+    const duration = 500; // duration in ms
+    let startTime = null;
+
+    function animate(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      const elapsedTime = currentTime - startTime;
+      const progress = Math.min(elapsedTime / duration, 1);
+
+      slidesContainer.scrollLeft = startPosition + progress * distance;
+
+      if (progress < 1) {
+        window.requestAnimationFrame(animate);
+      }
+    }
+
+    window.requestAnimationFrame(animate);
+  }
+
 </script>
