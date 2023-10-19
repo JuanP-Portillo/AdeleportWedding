@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'adeleweddings@outlook.com' # Replace this email address with your own
+  default from: 'jp.port1453@gmail.com' # Replace this email address with your own
   layout 'mailer'
 end
