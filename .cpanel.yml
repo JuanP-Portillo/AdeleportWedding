@@ -1,4 +1,3 @@
 deploy:
   tasks:
-    - export DEPLOYPATH=/home/tupublic/public_html
-    - /bin/cp -r * /home/public_html
+    - echo "Deployment was successful!" > /home/tupublic/public_html/deploy_success.txt
