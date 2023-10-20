@@ -1,4 +1,4 @@
 deploy:
   tasks:
     - export DEPLOYPATH=/home/tupublic/public_html
-    - /bin/cp -r * /home/tupublic/public_html
+    - /bin/cp -r * /home/public_html
