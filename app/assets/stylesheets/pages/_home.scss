@@ -4,6 +4,11 @@
 }
 .row {
   margin: 0 !important;
+  padding: 2rem;
+  align-items: center;
+  background-color: rgb(220,212,196);
+  border-left: 2px solid rgb(188, 156, 124);
+
 }
 
 .fade-in {
@@ -18,12 +23,17 @@
   transform: translateY(0); /* Reset vertical translation */
 }
 
+.container-main {
+  padding: 10%;
+}
+
+.container-image {
+  padding: 0%;
+}
 
 .about_image {
-  width: 20em;
-  height: 30em;
-  margin: 6em;
-  margin-left: 15em;
+  width: 65%;
+  height: 100%;
 }
 
 .about_photo { /* Set the maximum width to 100% of its container */
